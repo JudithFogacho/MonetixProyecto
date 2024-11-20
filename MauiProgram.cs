@@ -11,12 +11,16 @@ namespace MonetixProyecto
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
+                    // Fuentes ya registradas
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+
+                    // Nueva fuente personalizada Koulen
+                    fonts.AddFont("Koulen-Regular.ttf", "Koulen");
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

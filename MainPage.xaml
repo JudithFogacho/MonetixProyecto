@@ -16,7 +16,7 @@
                    FontFamily="Koulen"
                    HorizontalOptions="Center"/>
 
-            <Image Source="monetix_logo.png"
+            <Image Source="https://i.imgur.com/KWshaxa.png"
                    HeightRequest="180"
                    WidthRequest="180"
                    HorizontalOptions="Center"/>
@@ -30,44 +30,50 @@
             <Frame BackgroundColor="White"
                    CornerRadius="25"
                    Padding="20"
-                   HasShadow="True">
+                   HasShadow="True"
+                   BorderColor= "#E5E0D8">
 
                 <VerticalStackLayout Spacing="15">
-                    <Label Text="usuario"
+                    <Label Text="Usuario"
                            FontSize="18"
                            TextColor="Black"
                            FontFamily="Koulen"/>
 
                     <Border StrokeShape="RoundRectangle 10"
                             BackgroundColor="#E5E0D8"
-                            Padding="10,5">
+                            Padding="10,5"
+                            Stroke="#E5E0D8">
                         <Entry Placeholder="Escribe tu usuario"
                                FontSize="16"
                                TextColor="Black"/>
                     </Border>
 
-                    <Label Text="ContrasEnA"
+                    <Label Text="CONTRASENA"
                            FontSize="18"
                            TextColor="Black"
                            FontFamily="Koulen"/>
 
                     <Border StrokeShape="RoundRectangle 10"
                             BackgroundColor="#E5E0D8"
-                            Padding="10,5">
+                            Padding="10,5"
+                            Stroke="#E5E0D8">
                         <Entry Placeholder="Escribe tu contraseña"
                                FontSize="16"
                                IsPassword="True"
-                               TextColor="Black"/>
+                               TextColor="Black"
+                               />
+                                
                     </Border>
 
-                    <Button Text="entrar"
+                    <Button Text="Entrar"
                             FontSize="18"
                             BackgroundColor="#849671"
                             TextColor="White"
                             CornerRadius="30"
                             HeightRequest="45"
                             WidthRequest="200"
-                            HorizontalOptions="Center"/>
+                            HorizontalOptions="Center"
+                            FontFamily="Koulen"/>
                 </VerticalStackLayout>
             </Frame>
 
