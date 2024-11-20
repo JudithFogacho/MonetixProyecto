@@ -1,25 +1,16 @@
-﻿namespace MonetixProyecto
+﻿namespace MonetixProyecto;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage()
     {
-        int count = 0;
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+        InitializeComponent();
     }
 
+    // Método para manejar eventos si necesitas usar botones
+    private void OnButtonClicked(object sender, EventArgs e)
+    {
+        // Lógica del botón "Entrar"
+        DisplayAlert("Entrar", "Has iniciado sesión.", "OK");
+    }
 }
